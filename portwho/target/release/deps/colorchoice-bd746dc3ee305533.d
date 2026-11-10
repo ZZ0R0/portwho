@@ -1,7 +1,0 @@
-/home/zyx/Documents/portwho/portwho/target/release/deps/colorchoice-bd746dc3ee305533.d: /home/zyx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorchoice-1.0.5/src/lib.rs
-
-/home/zyx/Documents/portwho/portwho/target/release/deps/libcolorchoice-bd746dc3ee305533.rlib: /home/zyx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorchoice-1.0.5/src/lib.rs
-
-/home/zyx/Documents/portwho/portwho/target/release/deps/libcolorchoice-bd746dc3ee305533.rmeta: /home/zyx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorchoice-1.0.5/src/lib.rs
-
-/home/zyx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorchoice-1.0.5/src/lib.rs:
