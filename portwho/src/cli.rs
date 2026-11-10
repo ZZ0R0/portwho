@@ -1,29 +1,29 @@
-
 use clap::{Args, Parser, Subcommand};
 
 #[derive(Debug, Parser)]
 #[command(
     name = "portwho",
     version,
-    about = "Inspect Linux network sockets"
+    about = "Inspect Linux network sockets and processes"
 )]
 pub struct Cli {
     #[command(subcommand)]
     pub command: Option<Commands>,
 
+    /// Print machine-readable JSON
     #[arg(short, long, global = true)]
     pub json: bool,
 }
 
 #[derive(Debug, Subcommand)]
 pub enum Commands {
-    /// List network sockets
+    /// List network sockets without scanning processes
     List {
         #[command(flatten)]
         filters: SocketFilters,
     },
 
-    /// Inspect sockets bound to a local port
+    /// Inspect sockets using a local port
     Port {
         #[arg(value_parser = clap::value_parser!(u16).range(1..))]
         port: u16,
@@ -32,7 +32,7 @@ pub enum Commands {
         filters: SocketFilters,
     },
 
-    /// Inspect sockets belonging to a process
+    /// Inspect sockets owned by a process
     Pid {
         pid: u32,
 
